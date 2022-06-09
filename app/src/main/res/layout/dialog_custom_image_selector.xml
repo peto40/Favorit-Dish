@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="@dimen/_10sdp"
+    app:chainUseRtl="true">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/_16sdp"
+        android:textStyle="bold"
+        android:text="@string/title_select_image_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_camera"
+        android:textColor="@color/grey"
+        android:gravity="center"
+        android:textSize="@dimen/_16sdp"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_32sdp"
+        app:layout_constraintEnd_toStartOf="@id/tv_gallery"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        app:drawableTopCompat="@drawable/ic_vector_photo_camera" />
+
+    <TextView
+        android:id="@+id/tv_gallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/_16sdp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="@string/lbl_gallery"
+        android:layout_marginTop="@dimen/_32sdp"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        app:layout_constraintStart_toEndOf="@id/tv_camera"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:drawableTopCompat="@drawable/ic_vector_gallery" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
